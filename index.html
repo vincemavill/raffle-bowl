@@ -1,0 +1,957 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Privacy Policy - Raffle Bowl (Palabunutan)</title>
+  <meta name="description"
+    content="Privacy Policy for Raffle Bowl (Palabunutan) mobile app. Learn how your data and privacy are safeguarded when using our app.">
+  <meta name="author" content="vincemavill">
+  <link rel="icon" type="image/png" href="assets/splash-icon.png">
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700;800&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap"
+    rel="stylesheet">
+
+  <style>
+    :root {
+      --bg-warm: #FFF6EC;
+      --bg-surface: #FFFFFF;
+      --bg-surface-trans: rgba(255, 255, 255, 0.85);
+      --primary: #D96528;
+      --primary-hover: #BF531B;
+      --primary-light: #FDF0E5;
+      --accent-warm: #844824;
+      --text-main: #2D231E;
+      --text-muted: #6C5E55;
+      --text-subtle: #98877E;
+      --border-color: #EEDCCE;
+      --border-subtle: #F6ECE2;
+      --card-shadow: 0 10px 30px -5px rgba(132, 72, 36, 0.08), 0 4px 12px -2px rgba(132, 72, 36, 0.04);
+      --radius-lg: 20px;
+      --radius-md: 14px;
+      --radius-sm: 8px;
+      --radius-full: 9999px;
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
+
+    body {
+      font-family: 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+      background-color: var(--bg-warm);
+      color: var(--text-main);
+      line-height: 1.7;
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      position: relative;
+      overflow-x: hidden;
+    }
+
+    /* Decorative background glow */
+    body::before {
+      content: '';
+      position: fixed;
+      top: -120px;
+      right: -100px;
+      width: 500px;
+      height: 500px;
+      background: radial-gradient(circle, rgba(217, 101, 40, 0.12) 0%, rgba(255, 246, 236, 0) 70%);
+      border-radius: 50%;
+      pointer-events: none;
+      z-index: 0;
+    }
+
+    body::after {
+      content: '';
+      position: fixed;
+      bottom: -150px;
+      left: -120px;
+      width: 550px;
+      height: 550px;
+      background: radial-gradient(circle, rgba(217, 101, 40, 0.08) 0%, rgba(255, 246, 236, 0) 70%);
+      border-radius: 50%;
+      pointer-events: none;
+      z-index: 0;
+    }
+
+    /* Hero Section */
+    .hero-section {
+      position: relative;
+      z-index: 1;
+      max-width: 1100px;
+      margin: 0 auto;
+      padding: 56px 24px 32px;
+      text-align: center;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    .hero-brand {
+      display: inline-block;
+      align-items: center;
+      justify-content: center;
+      gap: 16px;
+      margin: 0 auto 20px auto;
+      text-decoration: none;
+      color: var(--text-main);
+      text-align: center;
+    }
+
+    .hero-app-logo {
+      width: 100px;
+      height: 100px;
+      border-radius: 14px;
+      object-fit: contain;
+      background-color: var(--bg-surface);
+      box-shadow: 0 6px 18px rgba(217, 101, 40, 0.16);
+      border: 1px solid var(--border-subtle);
+      transition: transform 0.25s ease;
+    }
+
+    .hero-brand:hover .hero-app-logo {
+      transform: scale(1.05) rotate(2deg);
+    }
+
+    .hero-brand-text {
+      text-align: center;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    .hero-brand-text h1 {
+      font-family: 'Outfit', sans-serif;
+      font-size: 1.6rem;
+      font-weight: 800;
+      letter-spacing: -0.015em;
+      color: var(--text-main);
+      line-height: 1.15;
+      text-align: center;
+    }
+
+    .hero-brand-tag {
+      font-size: 0.82rem;
+      font-weight: 700;
+      color: var(--primary);
+      text-transform: uppercase;
+      letter-spacing: 0.08em;
+      text-align: center;
+      display: block;
+    }
+
+    .policy-pill {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      padding: 6px 16px;
+      background-color: var(--primary-light);
+      border: 1px solid rgba(217, 101, 40, 0.25);
+      border-radius: var(--radius-full);
+      color: var(--primary);
+      font-size: 0.82rem;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+      margin: 0 auto 20px auto;
+    }
+
+    .hero-title {
+      font-family: 'Outfit', sans-serif;
+      font-size: 2.75rem;
+      font-weight: 800;
+      color: var(--text-main);
+      letter-spacing: -0.025em;
+      line-height: 1.15;
+      margin-bottom: 16px;
+    }
+
+    .hero-title span {
+      color: var(--primary);
+    }
+
+    .hero-subtitle {
+      max-width: 680px;
+      margin: 0 auto 24px;
+      font-size: 1.1rem;
+      color: var(--text-muted);
+    }
+
+    .meta-bar {
+      display: inline-flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      align-items: center;
+      gap: 16px 24px;
+      font-size: 0.88rem;
+      color: var(--text-subtle);
+      background-color: rgba(255, 255, 255, 0.65);
+      padding: 10px 22px;
+      border-radius: var(--radius-full);
+      border: 1px solid var(--border-color);
+    }
+
+    .meta-item {
+      display: flex;
+      align-items: center;
+      gap: 6px;
+    }
+
+    .meta-item strong {
+      color: var(--text-main);
+      font-weight: 600;
+    }
+
+    /* Key Guarantees Grid */
+    .highlights-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+      gap: 20px;
+      max-width: 1100px;
+      margin: 24px auto 44px;
+      padding: 0 24px;
+      position: relative;
+      z-index: 1;
+    }
+
+    .highlight-card {
+      background-color: var(--bg-surface);
+      border: 1px solid var(--border-color);
+      border-radius: var(--radius-lg);
+      padding: 24px;
+      box-shadow: var(--card-shadow);
+      transition: transform 0.25s ease, box-shadow 0.25s ease, border-color 0.25s ease;
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+    }
+
+    .highlight-card:hover {
+      transform: translateY(-3px);
+      box-shadow: 0 14px 34px -5px rgba(132, 72, 36, 0.12);
+      border-color: rgba(217, 101, 40, 0.4);
+    }
+
+    .highlight-icon {
+      width: 44px;
+      height: 44px;
+      border-radius: var(--radius-md);
+      background-color: var(--primary-light);
+      color: var(--primary);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 1.3rem;
+    }
+
+    .highlight-card h2 {
+      font-family: 'Outfit', sans-serif;
+      font-size: 1.15rem;
+      font-weight: 700;
+      color: var(--text-main);
+    }
+
+    .highlight-card p {
+      font-size: 0.92rem;
+      color: var(--text-muted);
+      line-height: 1.55;
+    }
+
+    /* Main Layout with Sidebar TOC and Content */
+    .content-container {
+      max-width: 1100px;
+      margin: 0 auto 60px;
+      padding: 0 24px;
+      display: grid;
+      grid-template-columns: 280px 1fr;
+      gap: 40px;
+      position: relative;
+      z-index: 1;
+      align-items: start;
+    }
+
+    /* Sticky Table of Contents */
+    .toc-card {
+      position: sticky;
+      top: 96px;
+      background-color: var(--bg-surface-trans);
+      backdrop-filter: blur(10px);
+      border: 1px solid var(--border-color);
+      border-radius: var(--radius-lg);
+      padding: 22px;
+      box-shadow: var(--card-shadow);
+    }
+
+    .toc-title {
+      font-family: 'Outfit', sans-serif;
+      font-size: 0.95rem;
+      font-weight: 700;
+      color: var(--text-main);
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+      margin-bottom: 14px;
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+
+    .toc-list {
+      list-style: none;
+      display: flex;
+      flex-direction: column;
+      gap: 6px;
+    }
+
+    .toc-link {
+      display: block;
+      padding: 7px 12px;
+      border-radius: var(--radius-sm);
+      color: var(--text-muted);
+      text-decoration: none;
+      font-size: 0.88rem;
+      font-weight: 500;
+      transition: all 0.2s ease;
+      border-left: 2px solid transparent;
+    }
+
+    .toc-link:hover,
+    .toc-link.active {
+      color: var(--primary);
+      background-color: var(--primary-light);
+      border-left-color: var(--primary);
+      padding-left: 14px;
+    }
+
+    /* Document Body */
+    .policy-content {
+      display: flex;
+      flex-direction: column;
+      gap: 32px;
+    }
+
+    .policy-section {
+      background-color: var(--bg-surface);
+      border: 1px solid var(--border-color);
+      border-radius: var(--radius-lg);
+      padding: 32px;
+      box-shadow: var(--card-shadow);
+      scroll-margin-top: 100px;
+    }
+
+    .section-header {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      margin-bottom: 18px;
+      padding-bottom: 14px;
+      border-bottom: 1px solid var(--border-subtle);
+    }
+
+    .section-num {
+      width: 32px;
+      height: 32px;
+      border-radius: 50%;
+      background-color: var(--primary-light);
+      color: var(--primary);
+      font-family: 'Outfit', sans-serif;
+      font-weight: 700;
+      font-size: 0.9rem;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-shrink: 0;
+    }
+
+    .section-header h2 {
+      font-family: 'Outfit', sans-serif;
+      font-size: 1.45rem;
+      font-weight: 700;
+      color: var(--text-main);
+      letter-spacing: -0.015em;
+    }
+
+    .policy-section p {
+      color: var(--text-muted);
+      font-size: 1rem;
+      margin-bottom: 16px;
+    }
+
+    .policy-section p:last-child {
+      margin-bottom: 0;
+    }
+
+    .policy-section ul {
+      margin: 12px 0 18px 22px;
+      color: var(--text-muted);
+    }
+
+    .policy-section li {
+      margin-bottom: 8px;
+    }
+
+    .policy-section li strong {
+      color: var(--text-main);
+    }
+
+    .callout-box {
+      margin-top: 18px;
+      padding: 16px 20px;
+      background-color: var(--primary-light);
+      border-left: 4px solid var(--primary);
+      border-radius: 0 var(--radius-md) var(--radius-md) 0;
+      font-size: 0.92rem;
+      color: var(--accent-warm);
+    }
+
+    .callout-box strong {
+      color: var(--primary);
+    }
+
+    /* Footer */
+    footer.site-footer {
+      margin-top: auto;
+      background-color: #261E1A;
+      color: #D6CBC4;
+      border-top: 1px solid rgba(255, 255, 255, 0.08);
+      position: relative;
+      z-index: 1;
+    }
+
+    .footer-container {
+      max-width: 1100px;
+      margin: 0 auto;
+      padding: 48px 24px 32px;
+      display: flex;
+      flex-direction: column;
+      gap: 32px;
+    }
+
+    .footer-top {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      justify-content: space-between;
+      gap: 24px;
+      padding-bottom: 28px;
+      border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+    }
+
+    .footer-brand {
+      display: flex;
+      align-items: center;
+      gap: 16px;
+    }
+
+    .footer-app-icon {
+      width: 50px;
+      height: 50px;
+      border-radius: 12px;
+      background-color: var(--bg-warm);
+      object-fit: contain;
+      padding: 4px;
+    }
+
+    .footer-brand-info h3 {
+      font-family: 'Outfit', sans-serif;
+      font-size: 1.25rem;
+      color: #FFFFFF;
+      font-weight: 700;
+    }
+
+    .footer-brand-info p {
+      font-size: 0.88rem;
+      color: #A4948A;
+    }
+
+    .footer-dev-badge {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      background-color: rgba(255, 255, 255, 0.06);
+      padding: 5px 12px;
+      border-radius: var(--radius-full);
+      border: 1px solid rgba(255, 255, 255, 0.12);
+      text-decoration: none;
+      color: #C5B8B0;
+      font-size: 0.78rem;
+      transition: all 0.25s ease;
+    }
+
+    .footer-dev-badge:hover {
+      background-color: rgba(255, 255, 255, 0.12);
+      border-color: var(--primary);
+      transform: translateY(-2px);
+    }
+
+    .footer-dev-badge img {
+      height: 13px;
+      width: auto;
+      filter: brightness(1.15);
+      vertical-align: middle;
+    }
+
+    .footer-bottom {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      justify-content: space-between;
+      gap: 16px;
+      font-size: 0.85rem;
+      color: #8C7D73;
+    }
+
+    .footer-bottom a {
+      color: #D6CBC4;
+      text-decoration: none;
+      transition: color 0.2s ease;
+    }
+
+    .footer-bottom a:hover {
+      color: var(--primary);
+      text-decoration: underline;
+    }
+
+    /* Back to top floating button */
+    #back-to-top {
+      position: fixed;
+      bottom: 28px;
+      right: 28px;
+      width: 44px;
+      height: 44px;
+      border-radius: 50%;
+      background-color: var(--primary);
+      color: #FFFFFF;
+      border: none;
+      box-shadow: 0 6px 18px rgba(217, 101, 40, 0.35);
+      cursor: pointer;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 1.2rem;
+      opacity: 0;
+      visibility: hidden;
+      transform: translateY(12px);
+      transition: all 0.25s ease;
+      z-index: 99;
+    }
+
+    #back-to-top.visible {
+      opacity: 1;
+      visibility: visible;
+      transform: translateY(0);
+    }
+
+    #back-to-top:hover {
+      background-color: var(--primary-hover);
+      transform: translateY(-3px);
+    }
+
+    /* Responsive */
+    @media (max-width: 860px) {
+      .content-container {
+        grid-template-columns: 1fr;
+        gap: 28px;
+      }
+
+      .toc-card {
+        display: none;
+      }
+
+      .hero-title {
+        font-size: 2.2rem;
+      }
+
+      .policy-section {
+        padding: 24px;
+      }
+    }
+
+    @media (max-width: 540px) {
+      .hero-title {
+        font-size: 1.85rem;
+      }
+
+      .hero-brand-text h1 {
+        font-size: 1.35rem;
+      }
+
+      .hero-app-logo {
+        width: 48px;
+        height: 48px;
+      }
+
+      .hero-section {
+        padding: 36px 16px 20px;
+      }
+
+      .content-container,
+      .highlights-grid {
+        padding: 0 16px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <main id="top">
+    <!-- Hero Section -->
+    <section class="hero-section">
+      <div class="hero-brand">
+        <img src="assets/splash-icon.png" alt="Raffle Bowl App Icon" class="hero-app-logo">
+        <div class="hero-brand-text">
+          <h1>Raffle Bowl</h1>
+          <span class="hero-brand-tag">Palabunutan</span>
+        </div>
+      </div>
+
+      <div class="policy-pill">
+        🛡️ Transparency & Safety First
+      </div>
+      <h2 class="hero-title">Privacy Policy for <span>Raffle Bowl</span></h2>
+      <p class="hero-subtitle">
+        Your privacy is completely respected. Raffle Bowl (Palabunutan) is built with an offline-first philosophy — we
+        do not collect, sell, or transmit any of your personal data.
+      </p>
+
+      <div class="meta-bar">
+
+
+        <div class="meta-item">
+          <span>Effective Date:</span>
+          <strong>October 28, 2026</strong>
+        </div>
+      </div>
+    </section>
+
+    <!-- Key Guarantees -->
+    <section class="highlights-grid" aria-label="Privacy Highlights">
+      <div class="highlight-card">
+        <div class="highlight-icon">🔒</div>
+        <h2>Zero Data Collection</h2>
+        <p>No user accounts, no identity collection, no trackers, and no remote databases. Your activities are strictly
+          your own.</p>
+      </div>
+
+      <div class="highlight-card">
+        <div class="highlight-icon">📱</div>
+        <h2>100% On-Device Storage</h2>
+        <p>All raffle bowls, candidate names, presets, and winner histories remain safely locked inside your device's
+          private storage.</p>
+      </div>
+
+      <div class="highlight-card">
+        <div class="highlight-icon">📳</div>
+        <h2>Local Motion Sensing Only</h2>
+        <p>The device accelerometer is accessed locally in real-time solely to animate bowl tumbling when shaken.
+          Nothing is ever logged.</p>
+      </div>
+
+      <div class="highlight-card">
+        <div class="highlight-icon">✨</div>
+        <h2>Ad-Free & Kid-Safe</h2>
+        <p>No intrusive advertising networks, third-party analytics SDKs, or background telemetry services.</p>
+      </div>
+    </section>
+
+    <!-- Content Area with Sticky Navigation -->
+    <div class="content-container">
+      <!-- Table of Contents -->
+      <aside aria-label="Table of Contents">
+        <div class="toc-card">
+          <div class="toc-title">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+              stroke-linecap="round" stroke-linejoin="round">
+              <line x1="8" y1="6" x2="21" y2="6"></line>
+              <line x1="8" y1="12" x2="21" y2="12"></line>
+              <line x1="8" y1="18" x2="21" y2="18"></line>
+              <line x1="3" y1="6" x2="3.01" y2="6"></line>
+              <line x1="3" y1="12" x2="3.01" y2="12"></line>
+              <line x1="3" y1="18" x2="3.01" y2="18"></line>
+            </svg>
+            Table of Contents
+          </div>
+          <nav>
+            <ul class="toc-list" id="toc-list">
+              <li><a href="#overview" class="toc-link">1. Overview</a></li>
+              <li><a href="#data-collection" class="toc-link">2. Information Collection</a></li>
+              <li><a href="#local-storage" class="toc-link">3. Local Data Storage</a></li>
+              <li><a href="#device-permissions" class="toc-link">4. Device Sensors & Permissions</a></li>
+              <li><a href="#third-parties" class="toc-link">5. Third-Party Services</a></li>
+              <li><a href="#children" class="toc-link">6. Children's Privacy</a></li>
+              <li><a href="#data-retention" class="toc-link">7. Data Retention & Deletion</a></li>
+              <li><a href="#updates" class="toc-link">8. Policy Updates</a></li>
+              <li><a href="#contact" class="toc-link">9. Contact & Support</a></li>
+            </ul>
+          </nav>
+        </div>
+      </aside>
+
+      <!-- Main Policy Clauses -->
+      <div class="policy-content">
+
+        <!-- 1. Overview -->
+        <section class="policy-section" id="overview">
+          <div class="section-header">
+            <div class="section-num">1</div>
+            <h2>Overview</h2>
+          </div>
+          <p>
+            Welcome to <strong>Raffle Bowl</strong> (also known as <em>Palabunutan</em>), developed by
+            <strong>vincemavill</strong>. This Privacy Policy clarifies how the mobile application operates regarding
+            user data and privacy.
+          </p>
+          <p>
+            We strongly believe privacy is a fundamental right. Raffle Bowl is designed from the ground up as a
+            standalone, offline-friendly utility for randomized draws, games, raffles, and traditional Filipino
+            "bunutan" paper picking without requiring user tracking or online surveillance.
+          </p>
+        </section>
+
+        <!-- 2. Information Collection -->
+        <section class="policy-section" id="data-collection">
+          <div class="section-header">
+            <div class="section-num">2</div>
+            <h2>Information Collection and Use</h2>
+          </div>
+          <p>
+            <strong>We do not collect any personal identifiable information (PII).</strong>
+          </p>
+          <p>When you download and use Raffle Bowl, we do not request or gather:</p>
+          <ul>
+            <li>Your name, username, or contact information (email, phone, address).</li>
+            <li>Your geographical location (GPS or network IP-based coordinates).</li>
+            <li>Your device identifiers, advertising IDs, or hardware serial numbers.</li>
+            <li>Your contacts, photos, microphone recordings, or camera feeds.</li>
+            <li>Payment or credit card information.</li>
+          </ul>
+          <div class="callout-box">
+            <strong>Key Guarantee:</strong> No registration, sign-in, or account creation is required to use any feature
+            of Raffle Bowl.
+          </div>
+        </section>
+
+        <!-- 3. Local Storage -->
+        <section class="policy-section" id="local-storage">
+          <div class="section-header">
+            <div class="section-num">3</div>
+            <h2>Local Data Storage (On-Device Only)</h2>
+          </div>
+          <p>
+            Raffle Bowl saves the items you enter (such as participant names, raffle tickets, bowl titles, presets, and
+            winner draw history) exclusively within your device’s local sandbox storage (using React Native
+            <code>AsyncStorage</code>).
+          </p>
+          <ul>
+            <li><strong>No Cloud Syncing:</strong> Your raffle entries and history are never sent over the internet or
+              uploaded to any cloud server.</li>
+            <li><strong>Full Ownership:</strong> You retain complete ownership and sovereignty over your raffle data.
+            </li>
+            <li><strong>Isolated Storage:</strong> Other applications on your device cannot access Raffle Bowl's private
+              data sandbox.</li>
+          </ul>
+        </section>
+
+        <!-- 4. Device Permissions -->
+        <section class="policy-section" id="device-permissions">
+          <div class="section-header">
+            <div class="section-num">4</div>
+            <h2>Device Sensors & Permissions</h2>
+          </div>
+          <p>
+            To deliver an engaging, realistic simulation of drawing paper tickets from a raffle bowl, the app makes use
+            of specific device hardware capabilities:
+          </p>
+          <ul>
+            <li>
+              <strong>Motion Sensors (Accelerometer):</strong> Used locally in real-time to detect physical shaking of
+              your phone. Shaking the device shakes the raffle bowl and tumbles the paper tickets using the in-app
+              physics engine. Accelerometer readings are processed immediately in memory and are never recorded, logged,
+              or transmitted anywhere.
+            </li>
+            <li>
+              <strong>Haptic Feedback / Vibration:</strong> Provides tactile feedback when shaking the bowl or revealing
+              a drawn lot.
+            </li>
+          </ul>
+          <p>
+            Raffle Bowl does not request background location, camera, microphone, or address book permissions.
+          </p>
+        </section>
+
+        <!-- 5. Third-Party Services -->
+        <section class="policy-section" id="third-parties">
+          <div class="section-header">
+            <div class="section-num">5</div>
+            <h2>Third-Party Services and Analytics</h2>
+          </div>
+          <p>
+            Many modern apps bundle third-party tracking, advertising, and marketing SDKs. <strong>Raffle Bowl does
+              not.</strong>
+          </p>
+          <ul>
+            <li>No advertising networks (e.g., AdMob, Unity Ads, Meta Audience Network).</li>
+            <li>No tracking or user profiling services.</li>
+            <li>No external telemetry frameworks.</li>
+          </ul>
+        </section>
+
+        <!-- 6. Children's Privacy -->
+        <section class="policy-section" id="children">
+          <div class="section-header">
+            <div class="section-num">6</div>
+            <h2>Children’s Privacy (COPPA & GDPR-K Compliance)</h2>
+          </div>
+          <p>
+            Raffle Bowl is a safe, family-friendly utility suitable for general audiences of all ages, including
+            classroom raffles, family games, and children's party activities.
+          </p>
+          <p>
+            Because we do not collect any personal data whatsoever, Raffle Bowl complies fully with the <em>Children’s
+              Online Privacy Protection Act (COPPA)</em>, the <em>EU General Data Protection Regulation (GDPR /
+              GDPR-K)</em>, and applicable international privacy frameworks. We do not knowingly solicit or collect data
+            from children under 13 (or under 16 in applicable jurisdictions).
+          </p>
+        </section>
+
+        <!-- 7. Data Retention & Deletion -->
+        <section class="policy-section" id="data-retention">
+          <div class="section-header">
+            <div class="section-num">7</div>
+            <h2>Data Retention and Deletion</h2>
+          </div>
+          <p>
+            Since all data lives strictly on your local device:
+          </p>
+          <ul>
+            <li><strong>Manual Reset:</strong> You can delete any individual raffle bowl or clear your draw history at
+              any time from within the app interface.</li>
+            <li><strong>Clear App Storage:</strong> Clearing app storage in your device Settings completely removes all
+              saved data.</li>
+            <li><strong>Uninstallation:</strong> Uninstalling the app permanently purges all saved bowls and preferences
+              from your device.</li>
+          </ul>
+        </section>
+
+        <!-- 8. Policy Updates -->
+        <section class="policy-section" id="updates">
+          <div class="section-header">
+            <div class="section-num">8</div>
+            <h2>Changes to This Privacy Policy</h2>
+          </div>
+          <p>
+            We may occasionally update this Privacy Policy to reflect future software additions or regulatory
+            adjustments. Whenever changes are made, the revised policy will be posted on this page with an updated
+            "Effective Date".
+          </p>
+          <p>
+            We encourage you to review this page periodically to remain informed about our continuing commitment to
+            safeguarding your privacy.
+          </p>
+        </section>
+
+        <!-- 9. Contact & Support -->
+        <section class="policy-section" id="contact">
+          <div class="section-header">
+            <div class="section-num">9</div>
+            <h2>Contact & Support</h2>
+          </div>
+          <p>
+            If you have questions, feedback, or inquiries regarding this Privacy Policy or the Raffle Bowl app, please
+            feel free to reach out via GitHub:
+          </p>
+          <div class="callout-box">
+            <strong>Developer:</strong> vincemavill<br>
+            <strong>GitHub Repository:</strong> <a href="https://github.com/vincemavill/palabunutan" target="_blank"
+              rel="noopener noreferrer"
+              style="color: var(--primary); font-weight: 600;">github.com/vincemavill/palabunutan</a>
+          </div>
+        </section>
+
+      </div>
+    </div>
+  </main>
+
+  <!-- Footer -->
+  <footer class="site-footer">
+    <div class="footer-container">
+      <div class="footer-top">
+        <div class="footer-brand">
+          <img src="assets/splash-icon.png" alt="Raffle Bowl Logo" class="footer-app-icon">
+          <div class="footer-brand-info">
+            <h3>Raffle Bowl (Palabunutan)</h3>
+          </div>
+        </div>
+
+        <a href="https://github.com/vincemavill/palabunutan" target="_blank" rel="noopener noreferrer"
+          class="footer-dev-badge" title="View Project on GitHub">
+          <span>Created by</span>
+          <img src="assets/devname.png" alt="vincemavill">
+        </a>
+      </div>
+
+      <div class="footer-bottom">
+        <p>&copy; 2026 vincemavill. All rights reserved.</p>
+        <p>Built for fairness, fun, and total privacy.</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Floating Back to Top Button -->
+  <button id="back-to-top" aria-label="Back to top" title="Back to top">
+    ↑
+  </button>
+
+  <script>
+    // Smooth scroll and active TOC highlight
+    document.addEventListener('DOMContentLoaded', function () {
+      const backToTop = document.getElementById('back-to-top');
+      const sections = document.querySelectorAll('.policy-section');
+      const tocLinks = document.querySelectorAll('.toc-link');
+
+      // Show/Hide back-to-top button
+      window.addEventListener('scroll', function () {
+        if (window.scrollY > 350) {
+          backToTop.classList.add('visible');
+        } else {
+          backToTop.classList.remove('visible');
+        }
+
+        // Active link in TOC based on scroll
+        let currentSection = '';
+        sections.forEach(function (sec) {
+          const top = sec.offsetTop - 120;
+          if (window.scrollY >= top) {
+            currentSection = sec.getAttribute('id');
+          }
+        });
+
+        tocLinks.forEach(function (link) {
+          link.classList.remove('active');
+          if (link.getAttribute('href') === '#' + currentSection) {
+            link.classList.add('active');
+          }
+        });
+      });
+
+      backToTop.addEventListener('click', function () {
+        window.scrollTo({ top: 0, behavior: 'smooth' });
+      });
+    });
+  </script>
+</body>
+
+</html>
